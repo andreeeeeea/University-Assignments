@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" prefHeight="399.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bham.fsd.assignments.jabberserver.TimelineController">
+   <children>
+      <TextField fx:id="T2" layoutY="322.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#enterButtonOnAction" prefHeight="77.0" prefWidth="413.0" />
+      <Button fx:id="B6" layoutX="413.0" layoutY="323.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#enterButtonOnAction" prefHeight="77.0" prefWidth="90.0" text="Send" />
+      <Button layoutX="501.0" layoutY="323.0" mnemonicParsing="false" onAction="#signoutButton" prefHeight="77.0" prefWidth="199.0" text="Sign Out" />
+      <Text layoutX="139.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timeline">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="525.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Who to follow">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutY="51.0">
+         <content>
+            <VBox fx:id="P2" prefHeight="270.0" prefWidth="502.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="503.0" layoutY="51.0">
+         <content>
+            <ListView fx:id="P3" prefHeight="272.0" prefWidth="197.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
